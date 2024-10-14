@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/enabled/564x/c7/9f/ba/c79fbad71a73480694524eb900f84d8c.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.padre
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "nav    nav   "
+    "cont1  cont1 "
+    "cont2  cont2"
+    "cont3 cont3"
+    "foot   foot ";
+    grid-gap: 15px;
+    place-items: center !important;
+    font-family: fantasy;
+}
+
+.padre .header
+{
+    grid-area: header;
+    background-color: blanchedalmond;
+    font-weight: bold;
+}
+
+.padre .nav
+{
+    grid-area: nav;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.padre .cont1
+{
+    grid-area: cont1;
+}
+
+.padre .cont2
+{
+    grid-area: cont2;
+}
+
+.padre .cont3
+{
+    grid-area: cont3;
+}
+
+.padre .foot
+{
+    grid-area: foot;
+    background-color: blanchedalmond;
+}
+
